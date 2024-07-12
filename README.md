@@ -1,6 +1,6 @@
 # Sandbox Project
 
-This repository is a simple sandbox project designed to experiment with various Node.js packages, ESLint configurations, and potentially Cypress tests.
+This repository is a simple sandbox project designed to experiment with various Node.js packages, ESLint configurations, and Cypress tests.
 
 ## Project Structure
 
@@ -13,7 +13,7 @@ This repository is a simple sandbox project designed to experiment with various 
 - A JavaScript function to change the background color.
 - ESLint configured to lint the JavaScript code.
 - GitHub Actions workflow to run ESLint on each push to the repository.
-- Plans to incorporate Cypress tests.
+- GitHub Actions workflow to run Cypress tests.
 
 ## Getting Started
 
@@ -41,3 +41,9 @@ This repository is a simple sandbox project designed to experiment with various 
 
    ```sh
    npm run lint
+5. To run Cypress headless, use the following command:
+
+   ```sh
+   npm run cypress:run
+
+   
