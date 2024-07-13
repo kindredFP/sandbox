@@ -8,10 +8,10 @@ export default [
       "cypress.config.js"
     ]
   },
-  { 
-    languageOptions: { 
+  {
+    languageOptions: {
       globals: {
-        ...globals.browser, 
+        ...globals.browser,
         ...globals.node,
         ...globals.cypress  // Add Cypress globals
       }
@@ -23,7 +23,17 @@ export default [
       cypress: pluginCypress
     },
     rules: {
-      'no-unused-vars': 'off',  // Turn off no-unused-vars rule
+      ...pluginJs.configs.recommended.rules,
+      "no-undef": "error", // Undefined variables
+      "no-constant-condition": "warn", // Constant conditions in if statements
+      "no-extra-semi": "error", // Extra semicolons
+      "no-redeclare": "error", // Variable redeclaration
+      "no-unreachable": "error", // Unreachable code
+      "consistent-return": "warn", // Consistent return statements
+      "eqeqeq": "error", // Require === and !==
+      "semi": ["error", "always"], // Semicolons
+      "no-unused-vars": "off", // Unused variables
+
     }
   },
   {
@@ -37,7 +47,9 @@ export default [
       }
     },
     rules: {
-      "no-undef": "off"
+      "no-undef": "off",
+      "semi": "off", // Semicolons
+      "no-unused-vars": "off", // Unused variables
     }
   }
 ];
