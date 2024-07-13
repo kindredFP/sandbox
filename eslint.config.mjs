@@ -33,7 +33,6 @@ export default [
       "eqeqeq": "error", // Require === and !==
       "semi": ["error", "always"], // Semicolons
       "no-unused-vars": "off", // Unused variables
-
     }
   },
   {
@@ -48,8 +47,10 @@ export default [
     },
     rules: {
       "no-undef": "off",
-      "semi": "off", // Semicolons
+      "semi": ["error", "always"], // Semicolons
       "no-unused-vars": "off", // Unused variables
+      "quotes": ["error", "double"], // Double quotes
+      "indent": ["error", 2], // Indentation
     }
   }
 ];
