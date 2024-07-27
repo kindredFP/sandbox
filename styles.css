@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+h1 {
+    color: #333;
+}
+
+#wordDisplay {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+    margin-bottom: 20px;
+}
+
+#guessInput {
+    font-size: 1.2em;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#guessButton {
+    font-size: 1.2em;
+    padding: 5px 10px;
+}
+
+#message {
+    font-size: 1.2em;
+    color: red;
+}
+
+#attempts {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
