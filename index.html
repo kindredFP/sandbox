@@ -3,23 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Background Color</title>
+    <title>Sandbox Landing Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
             text-align: center;
-            margin-top: 50px;
         }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
+        h1 {
+            margin-bottom: 20px;
+            font-size: 3em;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-buttons a {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: background 0.3s, border 0.3s;
+        }
+        .nav-buttons a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #ddd;
         }
     </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <button onclick="changeColor()">Change Background Color</button>
-    
-    <script src="script.js"></script>
+    <h1>Sandbox links</h1>
+    <div class="nav-buttons">
+        <a href="background-color/index.html">Change Background Color</a>
+        <a href="hangman/index1.html">Play Hangman</a>
+        <a href="news/index2.html">Top News</a>
+
+    </div>
 </body>
 </html>
