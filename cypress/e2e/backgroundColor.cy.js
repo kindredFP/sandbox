@@ -3,7 +3,7 @@ describe('Background Color Change', () => {
       // Visit your page
       cy.visit('index.html');
 
-      // Ensure there's only one button
+      cy.contains('Change').click()
       cy.get('button').should('have.length', 1);
 
       // Get the button and click it
